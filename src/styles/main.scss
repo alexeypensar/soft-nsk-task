@@ -7,6 +7,9 @@
 
 html {
 	scroll-behavior: smooth;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
 }
 
 
@@ -19,6 +22,7 @@ html, body {
 	max-width: 1200px;
 	margin: 0 auto;
 	width: 100%;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 14px;
+	padding-right: 14px;
+	// 1172 ширина контентной части, контейнер 1200.
 }
