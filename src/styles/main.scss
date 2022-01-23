@@ -175,18 +175,29 @@ html, body {
 	margin-top: 80px;
 	margin-bottom: 80px;
 	display: flex;
+	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .steps__item {
-	max-width: 190px;
+	width: 188px;
 	//todo сменить ширину на 188 после подключения корректных шрифтов
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
 	position: relative;
+
+	&:not(:last-child)::after {
+		position: absolute;
+		content: url("../img/icons/steps-divider.svg");
+		//margin: 0 auto;
+		right: -85px;
+		top: 40px;
+	}
+
+	//todo проверить, добавив ещё шаги, как себя дивайдеры вести будут
 }
 
 .steps__image {
@@ -204,4 +215,5 @@ html, body {
 .steps__description {
 	text-align: center;
 	color: $color-white;
+	//width: 99%;
 }

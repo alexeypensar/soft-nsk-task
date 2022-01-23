@@ -221,17 +221,24 @@ html {
   margin-top: 80px;
   margin-bottom: 80px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .steps__item {
-  max-width: 190px;
+  width: 188px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   position: relative;
+}
+.steps__item:not(:last-child)::after {
+  position: absolute;
+  content: url("../img/icons/steps-divider.svg");
+  right: -85px;
+  top: 40px;
 }
 
 .steps__image {
