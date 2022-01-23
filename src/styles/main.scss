@@ -1,15 +1,16 @@
-@import url('reset.css');
-@import url('__fonts.scss');
-@import url('__variables.scss');
-@import url('__helpers.scss');
-@import url('__animations.scss');
-@import url('__adaptive.scss');
+@import 'reset.css';
+@import '__fonts.scss';
+@import '__variables.scss';
+@import '__helpers.scss';
+@import '__animations.scss';
+@import '__adaptive.scss';
 
 html {
 	scroll-behavior: smooth;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato', 'Raleway', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
+	color: $color-black;
 }
 
 
@@ -27,3 +28,180 @@ html, body {
 	// 1172 ширина контентной части, контейнер 1200.
 }
 
+.header {
+	background-color: rgba(16, 16, 29, 0.9);
+	height: 100px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.navigation {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.navigation__list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+.navigation__item + .navigation__item {
+	margin-left: 60px;
+}
+
+
+.navigation__link {
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 16px;
+	color: $color-white;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	&_blue {
+		color: $color-blue;
+	}
+
+
+}
+
+// todo шрифт Lato таки посмотреть где-нибудь кроме google fonts.
+
+
+
+.about {
+	padding-top: 100px;
+	padding-bottom: 203px;
+	background: url('../img/about-bg.jpg') no-repeat;
+	background-size: cover;
+	min-height: 850px;
+}
+
+.about__heading {
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 58px;
+	text-transform: uppercase;
+	max-width: 780px;
+	margin-top: 103px;
+	margin-bottom: 80px;
+
+	&_blue {
+		color: $color-blue;
+	}
+}
+
+.advantages {
+	margin-bottom: 80px;
+}
+
+.advantages__heading {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 10px;
+}
+
+.advantages__item {
+	position: relative;
+	left: 15px;
+	padding-left: 5px;
+	font-size: 20px;
+	line-height: 24px;
+
+	&::before {
+		content: "-";
+		position: absolute;
+		left: -10px;
+	}
+
+
+	&:not(:last-child) {
+		margin-bottom: 5px;
+	}
+
+}
+
+.about__buttons {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+
+.about__order {
+	margin-right: 30px;
+}
+
+
+.order {
+	background: url('../img/order-bg.png') no-repeat,
+				#272733;
+	background-size: cover;
+	padding-top: 150px;
+	padding-bottom: 150px;
+
+}
+
+.order__heading {
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 43px;
+	color: $color-white;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 30px;
+		&_blue {
+		color: $color-blue;
+	}
+}
+
+.order__info {
+	color: #BBBBBB;
+	text-align: center;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.steps {
+	margin-top: 80px;
+	margin-bottom: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.steps__item {
+	max-width: 190px;
+	//todo сменить ширину на 188 после подключения корректных шрифтов
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+}
+
+.steps__image {
+	margin-bottom: 20px;
+	width: 100px;
+	height: 100px;
+	background: $color-blue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 5px solid #286690;
+	border-radius: 100%;
+}
+
+.steps__description {
+	text-align: center;
+	color: $color-white;
+}
