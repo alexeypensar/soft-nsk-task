@@ -1,12 +1,10 @@
 @charset "UTF-8";
 @import 'reset.css';
-/* шрифты */
 @font-face {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   src: local(""), url("fonts/Lato-Regular.woff2") format("woff2"), url("fonts/Lato-Regular.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   font-display: swap;
 }
 @font-face {
@@ -14,7 +12,6 @@
   font-style: normal;
   font-weight: 600;
   src: local(""), url("fonts/Lato-Semibold.woff2") format("woff2"), url("fonts/Lato-Semibold.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   font-display: swap;
 }
 @font-face {
@@ -22,7 +19,6 @@
   font-style: normal;
   font-weight: 700;
   src: local(""), url("fonts/Lato-Bold.woff2") format("woff2"), url("fonts/Lato-Bold.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   font-display: swap;
 }
 @font-face {
@@ -30,7 +26,6 @@
   font-style: normal;
   font-weight: 800;
   src: local(""), url("fonts/Lato-Heavy.woff2") format("woff2"), url("fonts/Lato-Heavy.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   font-display: swap;
 }
 /* цвета, градиенты */
@@ -155,7 +150,7 @@ html {
 }
 
 .about__heading {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 48px;
   line-height: 58px;
   text-transform: uppercase;
@@ -212,7 +207,7 @@ html {
 }
 
 .order__heading {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 43px;
   color: #FFFFFF;
