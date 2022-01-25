@@ -14,65 +14,66 @@
 
 
 
+
 </head>
 <body>
 
-<header class="header">
+<!--<header class="header">-->
 
-    <nav class="navigation container">
-        <a href="#">
-            <img src="img/loremipsum-logo.svg" alt="LOREMIPSUM.NET">
-        </a>
+<!--    <nav class="navigation container">-->
+<!--        <a href="#">-->
+<!--            <img src="img/loremipsum-logo.svg" alt="LOREMIPSUM.NET">-->
+<!--        </a>-->
 
-        <ul class="navigation__list">
-            <li class="navigation__item">
-                <a class="navigation__link navigation__link_blue" href="#">Бизнес</a>
-            </li>
-            <li class="navigation__item">
-                <a class="navigation__link" href="#">О нас</a>
-            </li>
-            <li class="navigation__item">
-                <a class="navigation__link" href="#">Цены</a>
-            </li>
-            <li class="navigation__item">
-                <a class="navigation__link" href="#order">Оформить заказ</a>
-            </li>
-        </ul>
-    </nav>
+<!--        <ul class="navigation__list">-->
+<!--            <li class="navigation__item">-->
+<!--                <a class="navigation__link navigation__link_blue" href="#">Бизнес</a>-->
+<!--            </li>-->
+<!--            <li class="navigation__item">-->
+<!--                <a class="navigation__link" href="#">О нас</a>-->
+<!--            </li>-->
+<!--            <li class="navigation__item">-->
+<!--                <a class="navigation__link" href="#">Цены</a>-->
+<!--            </li>-->
+<!--            <li class="navigation__item">-->
+<!--                <a class="navigation__link" href="#order">Оформить заказ</a>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </nav>-->
 
-</header>
+<!--</header>-->
 
-<main>
+<!--<main>-->
 
-    <section class="about">
+<!--    <section class="about">-->
 
-        <div class="about__inner container">
-            <h1 class="about__heading">
-            <span class="about__heading_blue">Lorem ipsum</span> dolor sit ametconsectetur <span class="about__heading_blue">adipiscing</span>
-            </h1>
-
-
-
-            <div class="advantages">
-                <h2 class="advantages__heading">At vero eos et accusamus et iusto odio dignissimos ducimus!</h2>
-
-                <ul class="advantages__list">
-                    <li class="advantages__item">Totam rem aperiam eaque ipsa</li>
-                    <li class="advantages__item">Sit voluptatem accusantium doloremque laudantium</li>
-                    <li class="advantages__item">Sed ut perspiciatis, unde omnis iste natus error</li>
-
-                </ul>
-            </div>
-
-            <div class="about__buttons">
-                <a href="#order" class="about__order main-button">Заказать</a>
-                <a href="#" class="about__more main-button main-button_white">Подробнее</a>
-            </div>
-        </div>
+<!--        <div class="about__inner container">-->
+<!--            <h1 class="about__heading">-->
+<!--            <span class="about__heading_blue">Lorem ipsum</span> dolor sit ametconsectetur <span class="about__heading_blue">adipiscing</span>-->
+<!--            </h1>-->
 
 
 
-    </section>
+<!--            <div class="advantages">-->
+<!--                <h2 class="advantages__heading">At vero eos et accusamus et iusto odio dignissimos ducimus!</h2>-->
+
+<!--                <ul class="advantages__list">-->
+<!--                    <li class="advantages__item">Totam rem aperiam eaque ipsa</li>-->
+<!--                    <li class="advantages__item">Sit voluptatem accusantium doloremque laudantium</li>-->
+<!--                    <li class="advantages__item">Sed ut perspiciatis, unde omnis iste natus error</li>-->
+
+<!--                </ul>-->
+<!--            </div>-->
+
+<!--            <div class="about__buttons">-->
+<!--                <a href="#order" class="about__order main-button">Заказать</a>-->
+<!--                <a href="#" class="about__more main-button main-button_white">Подробнее</a>-->
+<!--            </div>-->
+<!--        </div>-->
+
+
+
+<!--    </section>-->
 
     <section class="order" id="order">
         <h2 class="order__heading">
@@ -124,17 +125,20 @@
 
             </article>
 
-            <form class="order" action="#" method="post">
+            <form class="form" action="#" method="post">
 
-                <div class="order__inputs">
-                    <select name="alala" id="alala">
-                        <option value="alala">alala</option>
+<!--                todo name и прочие атрибуты всем инпутам не забыть добавить-->
+<!--                todo заменить placeholder'ы на лейблы, которые будут наверх всплывать?-->
+
+                <div class="form__inputs">
+                    <select class="form__input form__select" name="alala" id="alala">
+                        <option value="Выберите тип системы">Выберите тип системы</option>
                     </select>
-                    <input type="text">
-                    <input type="text">
+                    <input class="form__input" type="text" placeholder="Ваш e-mail">
+                    <input class="form__input" type="text" placeholder="Ваше имя">
                 </div>
 
-                <div class="order__inputs">
+                <div class="form__inputs">
                     <input type="range">
                     <input type="file">
                 </div>
@@ -152,9 +156,13 @@
 
 
 
-</main>
+
+
+<!--</main>-->
 
 <footer class="footer">
+
+
 
 
 
@@ -162,5 +170,6 @@
 
 
 <script src="js/script.js"></script>
+
 </body>
 </html>
